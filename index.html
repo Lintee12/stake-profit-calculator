@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stake Profit Calculator</title>
+		<link rel="stylesheet" type="text/css" href="/styles.css" />
+	</head>
+	<body>
+		<div class="main_container">
+			<h1>Stake Profit/loss Calculator</h1>
+			<div class="main_row">
+				<div class="main_col">
+					<h2>Deposits file (.csv)</h2>
+					<input accept=".csv" id="deposit_file" name="dep" type="file" required />
+				</div>
+				<div class="main_col">
+					<h2>Withdrawals file (.csv)</h2>
+					<input accept=".csv" id="withdrawal_file" name="wit" type="file" required />
+				</div>
+			</div>
+			<button id="calculate" onclick="calculate()">Calculate</button>
+			<div id="results">
+				<h2>Results</h2>
+			</div>
+		</div>
+		<script src="/main.js"></script>
+	</body>
+</html>
